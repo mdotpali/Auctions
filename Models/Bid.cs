@@ -7,9 +7,9 @@ namespace Auctions.Models
     public class Bid
     {
         public int Id { get; set; }
-        public double Pirce { get; set; }
+        public double Price { get; set; } = 0;
 
-        [Required]
+		[Required]
         public string? IdentityUserId { get; set; }
         [ForeignKey("IdentityUserId")]
         public IdentityUser? User { get; set; }

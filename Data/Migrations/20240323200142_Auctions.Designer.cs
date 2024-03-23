@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Auctions.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240318162600_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20240323200142_Auctions")]
+    partial class Auctions
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -40,7 +40,7 @@ namespace Auctions.Migrations
                     b.Property<int?>("ListingId")
                         .HasColumnType("int");
 
-                    b.Property<double>("Pirce")
+                    b.Property<double>("Price")
                         .HasColumnType("float");
 
                     b.HasKey("Id");

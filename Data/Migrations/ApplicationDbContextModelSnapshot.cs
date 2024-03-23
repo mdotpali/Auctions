@@ -37,7 +37,7 @@ namespace Auctions.Migrations
                     b.Property<int?>("ListingId")
                         .HasColumnType("int");
 
-                    b.Property<double>("Pirce")
+                    b.Property<double>("Price")
                         .HasColumnType("float");
 
                     b.HasKey("Id");

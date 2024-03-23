@@ -9,7 +9,7 @@ namespace Auctions.Models
         public int ID { get; set; }
         public string? Title { get; set; }
         public string? Description { get; set; }
-        public double Price { get; set; }
+        public double Price { get; set; } = 0;
         public string? ImagePath { get; set; }
         public bool IsSold { get; set; } = false;
         [Required]
