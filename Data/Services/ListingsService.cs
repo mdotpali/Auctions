@@ -37,5 +37,10 @@ namespace Auctions.Data.Services
 			Debug.WriteLine(listing);
 			return listing;
 		}
-	}
+
+        public async Task SaveChanges()
+        {
+			await _context.SaveChangesAsync();
+        }
+    }
 }
